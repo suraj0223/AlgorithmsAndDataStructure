@@ -1,3 +1,8 @@
+// Name : Linear Search Algorithm 
+// Complexity : O(n)
+// space complexity : O(1)
+
+// problem statement : Given n space seperated no, search for a given specific number.
 #pragma GCC "Ofast"
 #include<bits/stdc++.h>
 using namespace std;
@@ -17,18 +22,19 @@ int main() {
   cin>>n;
   
   vector<int> v1;
-  // Enter n space seperated integers
+  // N space seperated integers
   while(n--){
   int x;
   cin>>x;
   v1.push_back(x);
   }
   
-  // Enter element to be found
+  // Enter element to be search
   int element;
   cin>>element;
   
   string result = LinearSearch(v1, element) ? "Found" : "Not Found" ;
+ // prints the result of the search
   cout<< result << '\n';
   
   return 0;
